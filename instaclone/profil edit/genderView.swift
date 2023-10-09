@@ -32,10 +32,20 @@ struct genderView: View {
                 }label:{
                     Image("check")
                         .resizable()
+                        .scaledToFit()
                         .frame(width: 30, height: 35)
                         .padding(.trailing,30)
                 }
             }
+        }
+        HStack{
+            Text("공개 프로필에 포함되지 않습니다.")
+                .padding(EdgeInsets(top: 10, leading: 20, bottom: 0, trailing: 0))
+                .opacity(0.5)
+            Spacer()
+        }
+        HStack{
+            
         }
         Spacer()
     }

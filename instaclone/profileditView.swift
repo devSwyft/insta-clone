@@ -12,8 +12,18 @@ struct profileditView: View {
     @State var name: String = "박성민"
     @State var ID: String = "ps_m07"
     @State var introduction: String = ""
+    @State var viewchagne = 0
     var body: some View {
-        NavigationStack{
+        if viewchagne == 1{
+            nameview()
+        } 
+        else if viewchagne == 2{
+            idview()
+        }
+        else if viewchagne == 3{
+            introductionview()
+        }
+        else {
             VStack{
                 HStack{
                     Button{
@@ -28,7 +38,7 @@ struct profileditView: View {
                         .font(.title)
                         .fontWeight(.black)
                         .foregroundStyle(.black)
-                        .padding(.leading,30)
+                        .padding(.leading,20)
                     Spacer()
                     Button{
                         self.presentationMode.wrappedValue.dismiss()
@@ -36,6 +46,7 @@ struct profileditView: View {
                     }label:{
                         Image("check")
                             .resizable()
+                            .scaledToFit()
                             .frame(width: 30, height: 35)
                             .padding(.trailing,30)
                     }
@@ -69,7 +80,8 @@ struct profileditView: View {
                     }
                     HStack{
                         Button{
-                            print("이름 뷰 체인지")
+                            print("이름뷰로 넘어감")
+                            viewchagne = 1
                         }label: {
                             Text("\(name)")
                                 .foregroundStyle(.black)
@@ -94,7 +106,8 @@ struct profileditView: View {
                     }
                     HStack{
                         Button{
-                            print("아이디 뷰 체인지")
+                            print("아이디뷰로 넘어감")
+                            viewchagne = 2
                         }label: {
                             Text("\(ID)")
                                 .foregroundStyle(.black)
@@ -119,7 +132,8 @@ struct profileditView: View {
                     }
                     HStack{
                         Button{
-                            print("소개 뷰 체인지")
+                            viewchagne = 3
+                            print("소개뷰로 넘어감")
                         }label: {
                             Text("\(introduction)")
                                 .foregroundStyle(.black)
@@ -132,57 +146,13 @@ struct profileditView: View {
                     Divider()
                         .frame(width: 350)
                         .background(Color.gray)
-                    
-                }
-                //링크추가뷰
-                HStack{
-                    Button{
-                        print("링크추가 뷰로 가기")
-                    }label: {
-                        Text("링크 추가")
-                            .foregroundStyle(.black)
-                            .padding(.leading,20)
-                            .font(.system(size: 23))
-                            .fontWeight(.bold)
-                    }
-                    Spacer()
-                }
-                //성별뷰
-                HStack{
-                    Text("성별")
-                        .padding(.leading,20)
-                        .opacity(0.5)
-                        .fontWeight(.bold)
-                        .foregroundColor(.black)
-                    Spacer()
-                        .padding(.top,50)
-                }
-                HStack{
-                    NavigationLink{
-                        genderView()
-                            .navigationBarBackButtonHidden(true)
-                    }label: {
-                        Text("밝히고 싶지 않음")
-                            .foregroundStyle(.black)
-                            .padding(.leading,20)
-                            .font(.system(size: 23))
-                            .fontWeight(.bold)
-                    }
-                    Spacer()
-                    Image("general")
-                        .resizable()
-                        .frame(width: 15,height: 25)
-                        .padding(.trailing,20)
                 }
             }
-            Divider()
-                .frame(width: 350)
-                .background(Color.gray)
             Spacer()
         }
-        
+
+        }
     }
-}
 
 #Preview {
     profileditView()
