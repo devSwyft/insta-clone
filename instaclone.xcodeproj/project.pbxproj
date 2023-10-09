@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		67672CE12AD2EE0B007CFE5B /* profileditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67672CE02AD2EE0B007CFE5B /* profileditView.swift */; };
 		67D4FF9C2AC63F0E0026A60B /* instacloneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D4FF9B2AC63F0E0026A60B /* instacloneApp.swift */; };
 		67D4FF9E2AC63F0E0026A60B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D4FF9D2AC63F0E0026A60B /* ContentView.swift */; };
 		67D4FFA02AC63F0F0026A60B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67D4FF9F2AC63F0F0026A60B /* Assets.xcassets */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		67672CE02AD2EE0B007CFE5B /* profileditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = profileditView.swift; sourceTree = "<group>"; };
 		67D4FF982AC63F0E0026A60B /* instaclone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = instaclone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		67D4FF9B2AC63F0E0026A60B /* instacloneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = instacloneApp.swift; sourceTree = "<group>"; };
 		67D4FF9D2AC63F0E0026A60B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 				67D4FF9D2AC63F0E0026A60B /* ContentView.swift */,
 				67F296FE2AC8599A00E8A253 /* SignupVIew.swift */,
 				67F296FA2AC7E58E00E8A253 /* LoginView.swift */,
+				67672CE02AD2EE0B007CFE5B /* profileditView.swift */,
 				67D4FF9F2AC63F0F0026A60B /* Assets.xcassets */,
 				67D4FFA12AC63F0F0026A60B /* Preview Content */,
 			);
@@ -144,6 +147,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				67F296FF2AC8599A00E8A253 /* SignupVIew.swift in Sources */,
+				67672CE12AD2EE0B007CFE5B /* profileditView.swift in Sources */,
 				67D4FF9E2AC63F0E0026A60B /* ContentView.swift in Sources */,
 				67F296FB2AC7E58E00E8A253 /* LoginView.swift in Sources */,
 				67D4FF9C2AC63F0E0026A60B /* instacloneApp.swift in Sources */,
