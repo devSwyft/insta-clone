@@ -13,6 +13,7 @@ struct profileditView: View {
     @State var ID: String = "ps_m07"
     @State var introduction: String = ""
     @State var viewchagne = 0
+    @State var profilchange: Bool = false
     var body: some View {
         if viewchagne == 1{
             nameview()
@@ -52,21 +53,119 @@ struct profileditView: View {
                     }
                 }
                 Button{
-                    print("프로필 수정")
+                    profilchange.toggle()
                 }label: {
                     Image("profil")
                         .resizable()
                         .frame(width: 100,height: 100)
                         .padding(.top,30)
+                        .sheet(isPresented: $profilchange){
+                            Image("profil")
+                                .resizable()
+                                .frame(width: 50,height: 50)
+                                .padding(EdgeInsets(top: 40, leading: 0, bottom: 20, trailing: 0))
+                                    .presentationDragIndicator(.visible)
+                                    .presentationDetents([.height(260)])
+                                .cornerRadius(20)
+                        Rectangle()
+                            .fill(Color.black)
+                            .frame(height: 1)
+                            HStack{
+                                Button{
+                                    print("갤러리탭 열기")
+                                }label: {
+                                    Image("photo")
+                                        .resizable()
+                                        .frame(width: 25,height: 30)
+                                        .padding(EdgeInsets(top: 20, leading: 20, bottom: 0, trailing: 0))
+                                }
+                                Button{
+                                    print("갤러리탭 열기")
+                                }label: {
+                                    Text("새로운 프로필 사진 ")
+                                        .padding(.top,20)
+                                        .foregroundColor(.black)
+                                }
+                                Spacer()
+                            }
+                            HStack{
+                                Button{
+                                    
+                                }label: {
+                                    Image("trash")
+                                        .resizable()
+                                        .frame(width: 30,height: 30)
+                                        .padding(EdgeInsets(top: 20, leading: 20, bottom: 0, trailing: 0))
+                                }
+                                Button{
+                                    
+                                }label: {
+                                    Text("현재 사진 삭제 ")
+                                        .padding(.top,20)
+                                        .foregroundColor(Color(red: 211/255, green: 15/255, blue: 15/255))
+                                }
+                                Spacer()
+                            }
+                            Spacer()
+                        }
                 }
                 Button{
-                    print("프로필 수정")
+                    profilchange.toggle()
                 }label: {
                     Text("사진 수정")
                         .fontWeight(.bold)
                         .padding(.top,30)
                         .font(.system(size: 21))
                         .foregroundColor(Color(red: 13/255, green: 160/255, blue: 255/255))
+                        .sheet(isPresented: $profilchange){
+                            Image("profil")
+                                .resizable()
+                                .frame(width: 50,height: 50)
+                                .padding(EdgeInsets(top: 40, leading: 0, bottom: 20, trailing: 0))
+                                    .presentationDragIndicator(.visible)
+                                    .presentationDetents([.height(260)])
+                                .cornerRadius(20)
+                        Rectangle()
+                            .fill(Color.black)
+                            .frame(height: 1)
+                            HStack{
+                                Button{
+                                    print("갤러리탭 열기")
+                                }label: {
+                                    Image("photo")
+                                        .resizable()
+                                        .frame(width: 25,height: 30)
+                                        .padding(EdgeInsets(top: 20, leading: 20, bottom: 0, trailing: 0))
+                                }
+                                Button{
+                                    print("갤러리탭 열기")
+                                }label: {
+                                    Text("새로운 프로필 사진 ")
+                                        .padding(.top,20)
+                                        .foregroundColor(.black)
+                                }
+                                Spacer()
+                            }
+                            HStack{
+                                Button{
+                                    
+                                }label: {
+                                    Image("trash")
+                                        .resizable()
+                                        .frame(width: 30,height: 30)
+                                        .padding(EdgeInsets(top: 20, leading: 20, bottom: 0, trailing: 0))
+                                }
+                                Button{
+                                    
+                                }label: {
+                                    Text("현재 사진 삭제 ")
+                                        .padding(.top,20)
+                                        .foregroundColor(Color(red: 211/255, green: 15/255, blue: 15/255))
+                                }
+                                Spacer()
+                            }
+                            Spacer()
+                        }
                 }
                 //이름
                 VStack{
