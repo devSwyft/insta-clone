@@ -3,4 +3,129 @@
    uuid = "3BA8F617-748C-4C36-BEDF-9222A7CB26A8"
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "93B63FCB-FA91-40F0-BE9D-2514ECA7ACAD"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "instaclone/profil edit/idview.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "12"
+            endingLineNumber = "12"
+            landmarkName = "idview"
+            landmarkType = "14">
+            <Locations>
+               <Location
+                  uuid = "93B63FCB-FA91-40F0-BE9D-2514ECA7ACAD - c98e0777bb7c7d64"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "property wrapper backing initializer of instaclone.idview.idchange : Swift.String"
+                  moduleName = "instaclone"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/define_psm/Documents/Development/instaclone/instaclone/profil%20edit/idview.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "36">
+               </Location>
+               <Location
+                  uuid = "93B63FCB-FA91-40F0-BE9D-2514ECA7ACAD - 164e18a916003d0a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "instaclone.idview.idchange.getter : Swift.String"
+                  moduleName = "instaclone"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/define_psm/Documents/Development/instaclone/instaclone/profil%20edit/idview.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "20">
+               </Location>
+               <Location
+                  uuid = "93B63FCB-FA91-40F0-BE9D-2514ECA7ACAD - f334bcaf79172aaa"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "instaclone.idview.idchange.setter : Swift.String"
+                  moduleName = "instaclone"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/define_psm/Documents/Development/instaclone/instaclone/profil%20edit/idview.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "93B63FCB-FA91-40F0-BE9D-2514ECA7ACAD - df7530aee4fe0e9b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "instaclone.idview.idchange.modify : Swift.String"
+                  moduleName = "instaclone"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/define_psm/Documents/Development/instaclone/instaclone/profil%20edit/idview.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "93B63FCB-FA91-40F0-BE9D-2514ECA7ACAD - fb9e2a917df89bf6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "instaclone.idview.idchange.modify : Swift.String with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "instaclone"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/define_psm/Documents/Development/instaclone/%3Ccompiler-generated%3E"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "48">
+               </Location>
+               <Location
+                  uuid = "93B63FCB-FA91-40F0-BE9D-2514ECA7ACAD - 73a95a0e46afbee2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "instaclone.idview.$idchange.getter : SwiftUI.Binding&lt;Swift.String&gt;"
+                  moduleName = "instaclone"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/define_psm/Documents/Development/instaclone/instaclone/profil%20edit/idview.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "93B63FCB-FA91-40F0-BE9D-2514ECA7ACAD - cdaa19b206347fd8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "default argument 1 of instaclone.idview.init(gocontent: Swift.Int, idchange: Swift.String) -&gt; instaclone.idview"
+                  moduleName = "instaclone"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/define_psm/Documents/Development/instaclone/instaclone/profil%20edit/idview.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "28">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

@@ -4,59 +4,61 @@ struct ContentView: View {
     @State var nav = 5
     
     var body: some View {
-        if (nav == 1) {
-            HStack {
-            Image("instagram")
-                .resizable()
-                .frame(width: 130,height: 60)
-                .padding()
-            Spacer()
-            Image("heart")
-                .resizable()
-                .frame(width: 30,height: 30)
-                .padding()
-            Image("airplane")
-                .resizable()
-                .frame(width: 30,height: 30)
-                .padding()
-            }
-        }
-        
-        
-        VStack{
-            Spacer()
-            HStack{
-                TabView(selection: $nav) {
-                    mainView()
-                        .tabItem {
-                            Image("home")
-                        }
-                        .tag(1)
-                    searchView()
-                        .tabItem {
-                            Image("search")
-                        }
-                        .tag(2)
-                    uplodeView()
-                        .tabItem {
-                            Image("uplode")
-                        }
-                        .tag(3)
-                    LillseView()
-                        .tabItem {
-                            Image("lillse")
-                        }
-                        .tag(4)
-                    profilView()
-                        .tabItem{
-                            Image("profil")
-                        }
-                        .tag(5)
+        NavigationStack{
+            if (nav == 1) {
+                HStack {
+                    Image("instagram")
+                        .resizable()
+                        .frame(width: 130,height: 60)
+                        .padding()
+                    Spacer()
+                    Image("heart")
+                        .resizable()
+                        .frame(width: 30,height: 30)
+                        .padding()
+                    Image("airplane")
+                        .resizable()
+                        .frame(width: 30,height: 30)
+                        .padding()
                 }
             }
+            
+            
+            VStack{
+                Spacer()
+                HStack{
+                    TabView(selection: $nav) {
+                        mainView()
+                            .tabItem {
+                                Image("home")
+                            }
+                            .tag(1)
+                        searchView()
+                            .tabItem {
+                                Image("search")
+                            }
+                            .tag(2)
+                        uplodeView()
+                            .tabItem {
+                                Image("uplode")
+                            }
+                            .tag(3)
+                        LillseView()
+                            .tabItem {
+                                Image("lillse")
+                            }
+                            .tag(4)
+                        profilView()
+                            .tabItem{
+                                Image("profil")
+                            }
+                            .tag(5)
+                    }
+                }
+            }
+            .padding()
+            .navigationBarBackButtonHidden()
         }
-        .padding()
-        .navigationBarBackButtonHidden()
     }
 }
 
@@ -72,9 +74,20 @@ struct searchView: View {
     }
 }
 
-struct uplodeView: View{
+struct EmptyView: View{
     var body: some View{
-        Text("uplodeView")
+        Text("")
+    }
+}
+
+struct uplodeView: View{
+    @State private var isActive = false
+    var body: some View{
+                   VStack {
+                       Text("Upload View")
+                       NavigationLink(destination: inuplodeView(), isActive: $isActive) { EmptyView() }
+                   }
+                   .onAppear { self.isActive = true }
     }
 }
 
