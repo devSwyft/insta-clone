@@ -91,7 +91,7 @@ struct uplodeView: View{
     }
 }
 
-struct LillseView: View {
+struct LillseView: View { 
     var body: some View{
         Text("lillseView")
     }
