@@ -6,9 +6,10 @@ struct inuplodeView: View {
     @State var selectedItems: [PhotosPickerItem] = []
     @State var data: Data?
     @State var gopostupload:Bool = false
+    @State var showAlert = false
     var body: some View {
         if gopostupload == true{
-            postupload()
+            postupload(imageData: data)
         }
         else {
             VStack {
@@ -29,14 +30,26 @@ struct inuplodeView: View {
                         .bold()
                     Spacer()
                     Button {
-                        self.gopostupload.toggle()
-                        print("postupload뷰로")
+                        if self.data == nil {
+                            self.showAlert = true
+                        }else{
+                            self.gopostupload.toggle()
+                            print("postupload뷰로")
+                        }
                     } label: {
                         Text("다음")
                             .padding()
                             .font(.system(size: 20))
                             .bold()
                 }
+                    .alert(isPresented: $showAlert) {
+                                        Alert(
+                                            title: Text("경고"),
+                                            message: Text("이미지를 선택해주세요."),
+                                            dismissButton: .default(Text("확인"))
+                                        )
+                                    }
+
             }
             if let data = data, let uiimage = UIImage(data: data) {
                 Image(uiImage: uiimage)

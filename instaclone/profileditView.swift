@@ -67,9 +67,7 @@ struct profileditView: View {
                                     .presentationDragIndicator(.visible)
                                     .presentationDetents([.height(260)])
                                 .cornerRadius(20)
-                        Rectangle()
-                            .fill(Color.black)
-                            .frame(height: 1)
+                                Divider()
                             HStack{
                                 Button{
                                     print("갤러리탭 열기")
@@ -125,9 +123,7 @@ struct profileditView: View {
                                     .presentationDragIndicator(.visible)
                                     .presentationDetents([.height(260)])
                                 .cornerRadius(20)
-                        Rectangle()
-                            .fill(Color.black)
-                            .frame(height: 1)
+                            Divider()
                             HStack{
                                 Button{
                                     print("갤러리탭 열기")
